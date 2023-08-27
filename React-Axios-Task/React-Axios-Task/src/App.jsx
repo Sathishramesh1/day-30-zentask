@@ -17,6 +17,10 @@ function App() {
         
         <Content></Content>
       </div>
+      <footer className='bg-secondary d-flex justify-content-center'>
+        <h5>©2023 CreatedBy Sathish</h5>
+      </footer>
+
 
 
 

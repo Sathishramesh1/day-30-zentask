@@ -15,10 +15,11 @@ function Content() {
     function handleDelete(id){
       const filterdata=data.filter((e)=>e.id!=id);
       Setdata(filterdata);
+      
 
     };
     function handleEdit(id){
-      
+      handleDelete(id);
      const itemindex=(data.findIndex((item)=>{return item.id==id}));
       const filteredit=data.filter((e)=>e.id==id)[0];
       console.log(filteredit)
@@ -121,7 +122,7 @@ document.getElementById("form").reset();
   
     
    
-   <div className='d-flex'>
+   <div className='d-flex '>
    
    <div className='card-outer'>
    {data?.map((ele)=>(
@@ -134,7 +135,7 @@ document.getElementById("form").reset();
          <p>Phone:{ele.phone}</p>  
          <p>Zip:{ele.address.zipcode}</p>
         <div className='button-group'>
-            <button className='btn btn-primary' onClick={()=>{handleEdit(ele.id)}}>Edit</button>
+            <button className='btn btn-info' onClick={()=>{handleEdit(ele.id)}}>Edit</button>
             <button className='btn btn-danger' onClick={()=>{handleDelete(ele.id)}}>Delete</button>
         </div>
     </div>

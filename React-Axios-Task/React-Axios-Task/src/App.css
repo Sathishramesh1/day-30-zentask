@@ -28,10 +28,12 @@
 }
 .card-outer{
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
  
   justify-content: center;
+  padding: auto;
+  
   
  
   
@@ -51,5 +53,15 @@
   background-color: skyblue;
   margin-bottom: 2rem;
   padding: 2rem;
+  margin-top: 1rem;
 
 }
+body{
+  /* background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+   */
+   /* background-image: linear-gradient(to right, #33001b, #ff0084);  */
+   background-image: linear-gradient(to right, #ff9966, #ff5e62);
+  }
+  .card:hover{
+    box-shadow: 5px 5px 5px  green;
+  }
